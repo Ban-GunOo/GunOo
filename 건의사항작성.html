@@ -58,6 +58,7 @@ p {
 <h3>개선 및 건의 사항</h3>
 <p>
 <form action="write_action.php" method="post">
+	<hidden>{% csrf_token %}</hidden>
         <h1><b>식당이름</b><h1>
         <h2><input name="res_name" type="text" style = "text-align:left; 			          width:550px; height : 30px"><br></h2>
         <h1><b>내용</b><h1><br>
